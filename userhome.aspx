@@ -1,0 +1,150 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="userhome.aspx.cs" Inherits="userhome" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>User Home</title>
+     <script src="http://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous">   </script>
+     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <link href="css/custom.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script>
+        $(document).ready(function myfunction() {
+            $("#btnCart").click(function myfunction() {
+                window.location.href = "Cart.aspx";
+            });
+        });
+        </script>
+    <style>
+        body
+        {
+            background-color:#FFEDFA;
+        }
+         .BORDER
+        {
+            border-color:#FFB8E0;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+         <div>
+            <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle " data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="sr-only">Toggle Navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+
+                        </button>
+
+                            <a class = "navbar-brand" href="shop1.aspx" > <span><img src="icon/Pink and White Minimalist Initial Makeup Artist Logo (1).png" alt="myeshoping" height="30" /></span>Wearing-Area</a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class ="nav navbar-nav navbar-right">
+                            <li><a href="shop1.aspx">Home</a></li>
+                            <li><a href="About.aspx">About</a></li>
+                            <li><a href="ContactUS.aspx">Contact US</a></li>
+                            <li><a href="Blog.aspx">Blog</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-header">Woman</li>
+                                    <li role="separator" class="divider"></li>
+                                    <li> <a href="ProductsView.aspx">All Products</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li class="dropdown-header">Western wear</li>
+                                    <li role="separator" class="divider"></li>
+                                    <li> <a href="Dresses.aspx">Dresses</a></li>
+                                    <li> <a href="CropTop.aspx">Tops</a></li>
+                                    <li> <a href="Tshirts.aspx">Tshirts</a></li>
+                                    <li> <a href="Pants.aspx">Jeans</a></li>
+                                    <li> <a href="Trousers.aspx">Trousers</a></li>
+                                    <li> <a href="Shorts.aspx">Shorts</a></li>
+                                    <li> <a href="JumpSuits.aspx">Jumpsuits</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li class="dropdown-header">Idian & Fusion Wear</li>
+                                    <li role="separator" class="divider"></li>
+                                      <li> <a href="KurtasnSuits.aspx">Kurtas & Suits</a></li>
+                                    <li> <a href="KurtisnTunicsnTops.aspx">Kurtis, Tunics & Tops</a></li>
+                                    <li> <a href="Saress.aspx">Sarees</a></li>
+                                    <li> <a href="EthnicWear.aspx">Ethnic Wear</a></li>
+                                    <li> <a href="LehengaCholis.aspx">Lehenga Cholis</a></li>
+                                    <li> <a href="Co-ords.aspx">Co-ords</a></li>
+                                </ul>
+                            </li>
+                            <li><button id="btnCart" class="btn btn-primary navbar-btn" type="button">Cart<span class="badge" id="pCount" runat="server"></span>
+                               </button>
+                            </li>
+                            <li>
+                              &nbsp;
+                              &nbsp;
+                                                     
+                                <asp:Button ID="btnlogin" CssClass="btn btn-default navbar-btn" runat="server" Text="SignIn" OnClick="btnlogin_Click" />
+
+                                <asp:Button ID="btnlogout" CssClass="btn btn-default navbar-btn" runat="server" Text="SignOut" OnClick="btnlogout_Click" /></li>
+                             <li>
+                        <asp:Button ID="Button1" CssClass ="btn btn-link navbar-btn " runat="server" Text=""  />
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+        
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        &nbsp;  
+        &nbsp;
+
+        <asp:Label ID="lblsuccess" runat="server" CssClass="rext-success" ></asp:Label>
+
+        <!-- footer cintent start --->
+        <footer>
+            <hr class="BORDER"/>  
+            <div class="container">
+                <p class="pull-right"><a href="#">Back to top</a></p>
+                <p>&copy;wearing-area &middot; <a href="shop1.aspx">Home</a>&middot;<a href="#">About</a>&middot;<a href="#">Contact</a>&middot;<a href="#">Products</a></p>
+            </div>
+        </footer>
+
+
+        <!-- footer contant end -->
+    </form>
+</body>
+</html>
